@@ -4,26 +4,20 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static assets from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-// Redirect root URL to index.html inside public/html
+// Main Root Route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'html', 'main.html'));
 });
 
-// Sample API Endpoint
-app.get('/api/courses', (req, res) => {
-  const courses = [
-    { id: 1, title: 'Web Development 101', description: 'HTML, CSS, & JavaScript Basics' },
-    { id: 2, title: 'Database Systems', description: 'Intro to Relational Databases & SQL' },
-    { id: 3, title: 'PHP Programming', description: 'Backend Web Development' }
-  ];
-  res.json(courses);
+// Route handling for HTML files inside public/html/
+app.get('/:page.html', (req, res) => {
+  const page = req.params.page;
+  res.sendFile(path.join(__dirname, 'public', 'html', `${page}.html`));
 });
 
-// Fallback for 404 routes
 app.use((req, res) => {
   res.status(404).send('404: Resource Not Found');
 });
