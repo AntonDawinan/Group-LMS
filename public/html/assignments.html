@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments - AURALMS</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">⚡</div>
+      <span>AURA<strong>LMS</strong></span>
+    </div>
+
+    <nav class="nav-menu">
+      <p class="menu-label">MAIN</p>
+      <a href="/html/index.html" class="nav-link">
+        <span class="icon">📊</span> Overview
+      </a>
+      <a href="/html/courses.html" class="nav-link">
+        <span class="icon">📚</span> My Courses <span class="badge">3</span>
+      </a>
+      <a href="/html/assignments.html" class="nav-link active">
+        <span class="icon">📝</span> Assignments
+      </a>
+      <a href="/html/performance.html" class="nav-link">
+        <span class="icon">📈</span> Performance
+      </a>
+
+      <p class="menu-label">PREFERENCES</p>
+      <a href="/html/settings.html" class="nav-link">
+        <span class="icon">⚙️</span> Settings
+      </a>
+    </nav>
+
+    <div class="user-card">
+      <div class="avatar">AD</div>
+      <div class="user-info">
+        <span class="name">Anton Dawinan</span>
+        <span class="role">Student Developer</span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <header class="top-nav">
+      <h3>Assignments Hub</h3>
+    </header>
+
+    <div class="container">
+      <div class="card-list">
+        
+        <div class="list-card warning-border">
+          <div class="list-details">
+            <span class="status-badge pending">Pending</span>
+            <h4>Portfolio Website Layout Draft</h4>
+            <p>Course: Web Development 101 • Due: Tomorrow at 11:59 PM</p>
+          </div>
+          <button class="btn btn-primary assignment-submit-btn" data-task="Portfolio Draft">Submit Work</button>
+        </div>
+
+        <div class="list-card warning-border">
+          <div class="list-details">
+            <span class="status-badge pending">Pending</span>
+            <h4>MySQL Schema Design Project</h4>
+            <p>Course: Database Systems • Due: Sep 12, 2026</p>
+          </div>
+          <button class="btn btn-primary assignment-submit-btn" data-task="MySQL Schema">Submit Work</button>
+        </div>
+
+        <div class="list-card">
+          <div class="list-details">
+            <span class="status-badge completed">Completed</span>
+            <h4>PHP CRUD Authentication Setup</h4>
+            <p>Course: PHP Backend Fundamentals • Submitted: Sep 1, 2026</p>
+          </div>
+          <button class="btn btn-secondary" disabled>Submitted</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!-- settings.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - AURALMS</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">⚡</div>
+      <span>AURA<strong>LMS</strong></span>
+    </div>
+
+    <nav class="nav-menu">
+      <p class="menu-label">MAIN</p>
+      <a href="/html/index.html" class="nav-link">
+        <span class="icon">📊</span> Overview
+      </a>
+      <a href="/html/courses.html" class="nav-link">
+        <span class="icon">📚</span> My Courses <span class="badge">3</span>
+      </a>
+      <a href="/html/assignments.html" class="nav-link">
+        <span class="icon">📝</span> Assignments
+      </a>
+      <a href="/html/performance.html" class="nav-link">
+        <span class="icon">📈</span> Performance
+      </a>
+
+      <p class="menu-label">PREFERENCES</p>
+      <a href="/html/settings.html" class="nav-link active">
+        <span class="icon">⚙️</span> Settings
+      </a>
+    </nav>
+
+    <div class="user-card">
+      <div class="avatar">AD</div>
+      <div class="user-info">
+        <span class="name">Anton Dawinan</span>
+        <span class="role">Student Developer</span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <header class="top-nav">
+      <h3>Account Settings</h3>
+    </header>
+
+    <div class="container">
+      <form class="settings-form" id="settings-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" value="Anton Dawinan">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" value="anton@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="role-title">Role Title</label>
+          <input type="text" id="role-title" value="Student Developer">
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="email-notifs" checked>
+          <label for="email-notifs">Receive email notifications for assignment deadlines</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
